@@ -5,12 +5,16 @@ students = [
 ]
 
 class Student:
-    def __init__(self, number, height, weight):
+    def __init__(self, height, weight, number):
         self.height = height
         self.weight = weight
         self.number = number
 
-students.sort(key=lambda x: (x[0], -x[1]))
-
+arr = []
 for student in students:
-    print(student[0], student[1], student[2])
+    arr.append(Student(student[0], student[1], student[2]))  # 올바른 값 넣기
+
+arr.sort(key=lambda x: (x.height, -x.weight))
+
+for student in arr:
+    print(student.height, student.weight, student.number)
