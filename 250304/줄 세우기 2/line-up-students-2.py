@@ -12,7 +12,7 @@ class Student:
 
 arr = []
 for student in students:
-    arr.append(Student(student[0], student[1], student[2]))  # 올바른 값 넣기
+    arr.append(Student(student[0], student[1], student[2]))
 
 arr.sort(key=lambda x: (x.height, -x.weight))
 
