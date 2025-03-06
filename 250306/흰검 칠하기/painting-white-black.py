@@ -6,7 +6,7 @@ for num, direction in commands:
     x.append(int(num))
     dir.append(direction)
 
-tiles = [[0, 0, -1] for _ in range(2 * N * x + 1)] # [0] = 흰색, [1] = 검은색, [2] = 마지막 색
+tiles = [[0, 0, -1] for _ in range(2 * n * x + 1)] # [0] = 흰색, [1] = 검은색, [2] = 마지막 색
 
 cur = 100
 for i in range(n):
