@@ -29,15 +29,10 @@ for tile in tiles:
     if tile[0] >= 2 and tile[1] >= 2:
         g += 1
 
-    elif tile[0] > tile[1]:
-        w += 1
-
-    elif tile[0] < tile[1]:
-        b += 1
-
     else:
         if tile[2] == 0:
             w += 1
+
         elif tile[2] == 1:
             b += 1
 
