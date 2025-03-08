@@ -1,7 +1,7 @@
 n = int(input())
 arr = [int(input()) for _ in range(n)]
 
-max_value = 0
+max_value = 1
 cnt = 1
 
 for i in range(1, n):
