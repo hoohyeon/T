@@ -9,7 +9,11 @@ infected[P] = 1         # 감염 시작
 handshakes.sort()
 
 for t, x, y in handshakes:
-    if infected[x] and count[x] < K:
+    if infected[x] and infected[y]:
+        count[x] += 1
+        count[y] += 1
+
+    elif infected[x] and count[x] < K:
         infected[y] = 1
         count[x] += 1
 
