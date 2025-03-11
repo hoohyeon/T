@@ -11,13 +11,13 @@ handshakes.sort()
 for t, x, y in handshakes:
     if infected[x]:
         count[x] += 1
-        if count[x] < K:
+        if count[x] <= K:
             infected[y] = 1
 
     if infected[y]:
         count[y] += 1
-        if count[y] < K:
+        if count[y] <= K:
             infected[x] = 1
-            
+
 for person in infected[1:]:
     print(person, end='')
