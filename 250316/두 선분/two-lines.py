@@ -7,4 +7,4 @@ elif x3 <= x2 <= x4:
     print('intersecting')
 
 else:
-    print('nonintersectiong')
+    print('nonintersecting')
