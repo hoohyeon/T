@@ -19,6 +19,8 @@ for i in range(N):
 
         if x == 0 and y == 0:
             result = time
-            break
 
+    if result != -1:
+        break
+    
 print(result)
