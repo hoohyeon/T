@@ -1,11 +1,13 @@
 n = int(input())
 mirror = [list(input()) for _ in range(n)]
 k = int(input())
+
 razer = [[0] * (n+1) for _ in range(n+1)]
+
 
 dir = (k-1) // n
 dx = [1, 0, -1, 0]
-dy = [0, 1, 0, -1]
+dy = [0, -1, 0, 1]
 cnt = 0
 
 if dir == 0:
@@ -17,7 +19,7 @@ elif dir == 2:
 elif dir == 3:
     x, y = (4*n-k+1, 1)
 
-while 0 < x < n and 0 < y < n:
+while 0 < x <= n and 0 < y <= n:
     if mirror[x-1][y-1] == '/':
         if dir == 0:
             dir = 1
@@ -42,5 +44,4 @@ while 0 < x < n and 0 < y < n:
     y += dy[dir]
     
     cnt += 1
-
 print(cnt)
