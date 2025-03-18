@@ -3,7 +3,7 @@ mirror = [list(input()) for _ in range(n)]
 k = int(input())
 razer = [[0] * (n+1) for _ in range(n+1)]
 
-dir = k-1 // n
+dir = (k-1) // n
 dx, dy = [0, -1, 0, 1], [-1, 0, 1, 0]
 cnt = 0
 
