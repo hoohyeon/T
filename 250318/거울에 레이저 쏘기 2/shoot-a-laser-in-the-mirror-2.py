@@ -10,7 +10,7 @@ cnt = 0
 if dir == 0:
     x, y = (1, k)
 elif dir == 1:
-    x, y = (k-n, k)
+    x, y = (k-n, n)
 elif dir == 2:
     x, y = (n, 3*n-k+1)
 elif dir == 3:
