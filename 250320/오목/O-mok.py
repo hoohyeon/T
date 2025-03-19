@@ -33,9 +33,10 @@ def f(board):
 
 result = f(board)
 
-if result[0] == 0:
+if len(result) == 1:
     print(0)
 
 else:
     print(result[0])
     print(result[1], result[2])
+
