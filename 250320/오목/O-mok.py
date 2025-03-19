@@ -33,7 +33,7 @@ def f(board):
 
 result = f(board)
 
-if len(result) == 1:
+if result == 0:
     print(0)
 
 else:
