@@ -12,8 +12,8 @@ for _ in range(n):
     elif a == 'H':
         arr[p] = 2
 
-for i in range(n-k+1):
-    c_sum = sum(arr[i:i+k+2])
+for i in range(10001-k):
+    c_sum = sum(arr[i:i+k+1])
     max_sum = max(max_sum, c_sum)
 
 print(max_sum)
