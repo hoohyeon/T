@@ -1,7 +1,7 @@
 n, h, t = map(int, input().split())
 
 field = list(map(int, input().split()))
-new_field = [0] * 6
+new_field = [0] * n
 
 for i in range(n):
     new_field[i] = abs(h - field[i])
