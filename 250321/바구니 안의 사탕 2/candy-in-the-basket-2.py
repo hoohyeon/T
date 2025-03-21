@@ -1,6 +1,6 @@
 n, k = map(int, input().split())
 
-basket = [0] * 100
+basket = [0] * 101
 
 for _ in range(n):
     candy, coor = map(int, input().split())
